@@ -2,7 +2,7 @@
 
 ![Capa_Site](https://i.imgur.com/QvmOqST.png)
 
-Pequeno jogo utlizando a biblioteca Canvas.
+Pequeno jogo utilizando a biblioteca Canvas.
 
 [Acesse o site](https://rochamaatheus.github.io/ShootingGameTS/)
 
