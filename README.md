@@ -1,3 +1,5 @@
+- Nota: Ainda precisa de alterações para funcionar perfeitamente no mobile.
+
 # Shooting Game
 
 ![Capa_Site](https://i.imgur.com/QvmOqST.png)
