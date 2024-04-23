@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shooting Game</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: black;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    div:not(.container) {
+      position: fixed;
+      color: #fff;
+      margin: 1rem;
+      font-size: 1.2rem;
+      user-select: none;
+    }
+
+    #scoreBoard {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background-color: #fff;
+      flex-basis: 500px;
+      margin: 0 2rem;
+      text-align: center;
+      border-radius: 1rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 5em;
+    }
+
+    p {
+      margin: -.5rem 0 1rem;
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    button {
+      display: block;
+      margin: 1rem auto;
+      font-size: 1.2rem;
+      width: 90%;
+      color: #fff;
+      background-color: #007bff;
+      padding: 1rem;
+      border: none;
+      border-radius: 5rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <main id="scoreBoard">
+    <div class="container">
+      <h1>0</h1>
+      <p>Points</p>
+      <button id="startGameButton">Start Game</button>
+    </div>
+  </main>
+  <div>
+    <span>Score: </span>
+    <span id="scoreEl">0</span>
+  </div>
+  <canvas></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
