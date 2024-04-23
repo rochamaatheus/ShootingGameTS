@@ -90,14 +90,17 @@ function init() {
     enemies = [];
     particles = [];
     score = 0;
+    enemyEachTime = 1000;
+    clearInterval(intervalId);
     if (scoreEl)
         scoreEl.innerText = '0';
 }
 // Looping
 let score = 0;
 let enemyEachTime = 1000;
+let intervalId;
 function spawnEnemies() {
-    setInterval(() => {
+    intervalId = setInterval(() => {
         const radius = Math.random() * (30 - 4) + 4;
         let x;
         let y;
